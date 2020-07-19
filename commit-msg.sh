@@ -9,8 +9,6 @@ while read line; do
     fi
     if [ ${#line} -le 10 ]; then
         echo "Please enter a message with at least 10 characters."
-        echo "The following commit message has only ${#line} characters."
-        echo "Message: ${line}"
         exit 1
     fi
 done < "${1}"
