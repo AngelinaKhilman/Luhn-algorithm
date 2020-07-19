@@ -1,4 +1,4 @@
 #!/bin/sh
 
-set -e -x
+set -e 
 test $(git rev-parse --abbrev-ref HEAD) != "master"
