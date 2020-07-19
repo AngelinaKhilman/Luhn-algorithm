@@ -1,9 +1,6 @@
 #!/bin/sh
 
-clear
-echo "............script started............"
-sleep 1
-result=`python qwe.py`
+result=`python main.py`
 if [ "$result" == "1" ]; then
     echo "script return incorrect response"
     exit 1
